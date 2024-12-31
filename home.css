@@ -1,0 +1,122 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Black background */
+    color: #f1f1f1; /* Light text */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d32f2f; /* Red color */
+    padding: 10px 20px;
+    color: white;
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+.navbar .logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar ul li {
+    margin: 0 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+.navbar ul li a.btn {
+    background-color: #121212; /* Black button with red navbar */
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.navbar ul li a.active {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-image: url(laptop.avif);
+    color: white;
+    padding: 50px 20px;
+}
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.hero a.btn {
+    background-color: #121212; /* Black button */
+    color: #d32f2f; /* Red text */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #d32f2f;
+    font-size: 1em;
+}
+.hero a.btn:hover {
+    background-color: #d32f2f; /* Red background */
+    color: white; /* White text */
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #1e1e1e; /* Dark gray for contrast */
+}
+.features .feature {
+    text-align: center;
+    width: 30%;
+}
+.features .feature img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+.features .feature h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #f44336; /* Bright red for headings */
+}
+.features .feature p {
+    color: #cccccc; /* Light gray text */
+    font-size: 0.9em;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #d32f2f; /* Red footer */
+    color: white;
+    padding: 15px 0;
+}
+.footer a {
+    color: #121212; /* Black links */
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}

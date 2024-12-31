@@ -1,0 +1,93 @@
+/* Sign-up container */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e90ff, #87ceeb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(laptop.avif);
+    background-size:1200px;
+    
+}
+.signup-container {
+    background-color: rgba(230, 250, 249, 0);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Header section */
+.signup-header .logo {
+    width: 80px;
+    margin-bottom: 15px;
+}
+.signup-header h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 5px;
+}
+.signup-header p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Input fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Sign-up button */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+form button:hover {
+    background-color: #187bcd;
+}
+
+/* Terms and conditions */
+form .terms {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 10px;
+}
+form .terms a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+form .terms a:hover {
+    text-decoration: underline;
+}
+
+/* Footer section */
+.signup-footer p {
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+.signup-footer a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.signup-footer a:hover {
+    text-decoration: underline;
+}

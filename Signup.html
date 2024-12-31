@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Laptop Repair Service</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-header">
+            <img src="DGTL.jpg" alt="Laptop Repair Logo" class="logo">
+            <h1 style="color:white;">Create an Account</h1>
+            <p style="color:white;">Sign up to book repairs and manage your services.</p>
+        </div>
+        <form action="signup.php" name="signup" method="post"  onsubmit="return formPassValidate()">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Contact Number" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="ConfirmPassword" placeholder="Confirm Password" required>
+                <button type="submit" name="submit">Sign Up</button>
+        </form>
+        <script type="text/javascript">
+          function formPassValidate() {
+              var username = document.signup.name.value;
+              var password1 = document.signup.password.value;
+              var password2 = document.signup.ConfirmPassword.value;
+              var txtEmail = document.signup.email.value;
+              var phone = document.signup.phone.value;
+      
+              // Validate username length
+              if (username.length < 6 && username != "") {
+                  alert("Username must be at least six characters.");
+                  return false;
+              }
+      
+              // Validate password match
+              if (password1 != password2) {
+                  alert("Your passwords do not match.");
+                  return false;
+              }
+      
+              // Email validation using regex
+              var emailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+              if (!emailRegEx.test(txtEmail)) {
+                  alert("Invalid email.");
+                  return false;
+              }
+      
+              // Phone validation for Nepali phone number (+977 followed by 10 digits)
+              var phoneRegEx = /^[0-9]{10}$/;
+              if (!phoneRegEx.test(phone)) {
+                  alert("Please enter a valid Nepali phone number.");
+                  return false;
+              }
+      
+              return true; // All validations passed
+          }
+      </script>
+      
+        <div class="signup-footer">
+            <p style="color:white;">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
